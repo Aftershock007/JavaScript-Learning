@@ -98,3 +98,100 @@
 // }
 // const { "full name": full_name } = newObject
 // console.log(full_name)
+
+// function loginMessage(name = "arijit") {
+//     return `${name} is just logged in`
+// }
+// console.log(loginMessage())
+// console.log(loginMessage("biswas"))
+// function loginMessage(num1, num2, ...num) {
+//     return num
+// }
+// console.log(loginMessage(100, 200, 300, 400, 500))
+// addOne(1)
+// function addOne(num) {
+//     return num + 1
+// }
+// const addTwo = function (num) {
+//     return num + 2
+// }
+// addTwo(1)
+// console.log(this) // here it prints "{}" but in browser it prints "Window"
+// function arijit() {
+//     console.log(this)
+// }
+// arijit()
+// // if we write the curly braces then we have to write the return statement
+// const addThree = (num) => num + 3
+// const objectReturn = () => ({ username: "arijit" })
+// console.log(objectReturn())
+// // Immediately Invoked Function Expressions (IIFE)
+// ;(function chai() {
+//     console.log("DB Connected")
+// })()
+
+// falsy values -> false, 0, -0, 0n, "", null, undefined, NaN
+// truthy values -> "false", "0", " ", [], {}, function() {}
+// // Nullish Coalescing Operator (??) : only works for -> null, undefined
+// function f(name) {
+//     name += " biswas"
+//     console.log(name)
+//     return null
+// }
+// let val = f("arijit") ?? "hello"
+// console.log(val)
+
+// const greeting = "hello"
+// for (const greet of greeting) {
+//     console.log(greet)
+// }
+// const map = new Map()
+// map.set("In", "India")
+// map.set("UK", "England")
+// map.set("FR", "France")
+// console.log(map)
+// for (const [key, value] of map) {
+//     console.log(key, "->", value)
+// }
+// const myObject = { js: "Javascript", kt: "Kotlin", cpp: "C++" }
+// for (const key in myObject) {
+//     console.log(key, "->", myObject[key])
+// }
+// const arr = ["js", "cpp", "rb", "py"]
+// for (const key in arr) {
+//     console.log(arr[key])
+// }
+// function print(item) {
+//     console.log(item)
+// }
+// arr.forEach(print)
+// arr.forEach((value, index, arr) => console.log(value, index, arr))
+// const myCoding = [
+//     { languageName: "Javascript", languageFileName: "js" },
+//     { languageName: "Python", languageFileName: "py" },
+//     { languageName: "C++", languageFileName: "cpp" },
+//     { languageName: "Ruby", languageFileName: "rb" }
+// ]
+// myCoding.forEach((item) =>
+//     console.log(item.languageName, ":", item.languageFileName)
+// )
+// const myNums = [1, 2, 3, 4, 5]
+// const newNums = myNums.filter((item) => {
+//     return item > 2
+// })
+// // const newNums = myNums.filter((item) => item > 2)
+// console.log(newNums)
+// const newNums = myNums.map((item) => item + 10)
+// console.log(newNums)
+// const newNums = myNums
+//     .map((item) => item + 10)
+//     .map((item) => item * 10)
+//     .filter((item) => item > 130)
+// console.log(newNums)
+// first time accumulator takes initialValue and after that it takes currentValue in it
+// const initialValue = 0
+// const newNums = myNums.reduce((accumulator, currentValue) => {
+//     console.log(accumulator, currentValue)
+//     return accumulator + currentValue
+// }, initialValue)
+// console.log(newNums)
